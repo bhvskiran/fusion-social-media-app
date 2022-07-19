@@ -30,8 +30,9 @@ const ProfileCard = () => {
                 </div>
             </div>
             <hr />
-            {/* 34: 26 */}
         </div>
+
+        <span>My Profile</span>
     </div>
   )
 }
