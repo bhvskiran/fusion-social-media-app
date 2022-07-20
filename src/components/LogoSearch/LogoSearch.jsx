@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../img/logo-fusion.png"
+import Logo from "../../assets/img/logo-fusion.png"
 import UilSearch from "@iconscout/react-unicons/icons/uil-search";
 import "./LogoSearch.css"
 
