@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
 import "./App.css"
-import Home from "./pages/Home/Home";
+// import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 function App() {
   return (
