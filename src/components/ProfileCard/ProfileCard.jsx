@@ -4,6 +4,7 @@ import Profile from "../../assets/img/profileImg.jpg"
 import "./ProfileCard.css"
 
 const ProfileCard = () => {
+    const isProfilePage = true;
   return (
     <div className="profileCard">
         <div className="profileImages">
@@ -28,11 +29,21 @@ const ProfileCard = () => {
                     <span>23</span>
                     <span>Following</span>
                 </div>
+
+                {isProfilePage && (
+                    <>
+                        <div className="vl"></div>
+                        <div className="follow">
+                            <span>3</span>
+                            <span>Posts</span>
+                        </div>
+                    </>
+                )}
             </div>
             <hr />
         </div>
 
-        <span>My Profile</span>
+        {isProfilePage ? <div className="none"></div> : <span>My Profile</span>}
     </div>
   )
 }
