@@ -91,3 +91,7 @@
     cursor: pointer;
     align-self: center;
 }
+
+.none {
+    margin-bottom: 1rem;
+}
