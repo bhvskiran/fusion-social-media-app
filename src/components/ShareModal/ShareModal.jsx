@@ -1,9 +1,9 @@
-import { Modal, useMantineTheme } from "@mantine/core";
-import "../../pages/Auth/Auth.css";
-import PostShare from "../PostShare/PostShare";
+import { Modal, useMantineTheme } from '@mantine/core';
+import '../../pages/Auth/Auth.css';
+import PostShare from '../PostShare/PostShare';
 
-const ShareModal = (props) =>  {
-  const {opened, onClose} = props;
+const ShareModal = (props) => {
+  const { opened, onClose } = props;
   const theme = useMantineTheme();
 
   return (
@@ -13,11 +13,10 @@ const ShareModal = (props) =>  {
       overlayBlur={3}
       size="50%"
       opened={opened}
-      onClose={onClose}
-    >
+      onClose={onClose}>
       <PostShare />
     </Modal>
   );
-}
+};
 
 export default ShareModal;
