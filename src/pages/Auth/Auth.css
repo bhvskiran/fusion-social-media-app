@@ -14,14 +14,12 @@
 }
 
 .a-left {
-    flex: 1;
     gap: 2rem;
 }
 
 .a-left > img {
     width: 6rem;
     height: 7rem;
-    margin-left: 4rem;
 }
 
 .webName {
@@ -54,8 +52,59 @@
     margin-top: -2rem;
 }
 
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
-
-.a-right {
+.infoInput {
+    border: none;
+    outline: none;
+    background-color: var(--inputColor);
+    border-radius: 8px;
+    padding: 20px;
     flex: 1;
+}
+
+.infoForm > div {
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 90%;
+}
+
+.infoButton {
+    width: 6rem;
+    height: 2rem;
+    align-self: flex-end;
+    margin-top: -1rem;
+}
+
+.authForm {
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.authForm > div {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.changeFormSpan {
+    gap: 0.5rem !important;
+}
+
+.changeFormSpan > span {
+    font-size: 12px;
+}
+
+.changeFormSpan > span:nth-of-type(2) {
+    cursor: pointer;
+    color: var(--orange);
+    font-weight: bold;
 }
