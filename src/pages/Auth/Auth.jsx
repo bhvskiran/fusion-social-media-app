@@ -19,7 +19,7 @@ const Auth = () => {
           </div>
 
           <div className="changeFormSpan">
-            <span>Didn't have an account?</span>
+            <span>{`Didn't have an account?`}</span>
             <span onClick={() => setShowSignup(true)}>Signup Here</span>
           </div>
           <button className="button infoButton" type="submit">
