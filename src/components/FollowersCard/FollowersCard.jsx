@@ -1,28 +1,28 @@
 import React from 'react';
-import "./FollowersCard.css";
+import './FollowersCard.css';
 import { Followers } from '../Data/FollowersData';
 
 const FollowersCard = () => {
   return (
     <div className="followersCard">
-        <h3>Who is following you?</h3>
+      <h3>Who is following you?</h3>
 
-        {Followers.map((follower) => {
-          return (
-            <div className="follower">
-              <div>
-                <img src={follower.img} alt=""  className='followerImg'/>
-                <div className="name">
-                  <span>{follower.name}</span>
-                  <span>@{follower.username}</span>
-                </div>
+      {Followers.map((follower, index) => {
+        return (
+          <div className="follower" key={index}>
+            <div>
+              <img src={follower.img} alt="" className="followerImg" />
+              <div className="name">
+                <span>{follower.name}</span>
+                <span>@{follower.username}</span>
               </div>
-              <button className='button fc-button'>Follow</button>
             </div>
-          )
-        })}
+            <button className="button fc-button">Follow</button>
+          </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default FollowersCard
+export default FollowersCard;
